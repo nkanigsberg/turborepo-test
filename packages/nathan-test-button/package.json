@@ -1,6 +1,6 @@
 {
   "name": "@nathan-test/button",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.ts",
   "module": "./dist/index.mjs",
