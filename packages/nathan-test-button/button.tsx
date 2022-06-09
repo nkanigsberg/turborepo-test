@@ -1,14 +1,14 @@
-import React from 'react';
-import classnames from 'classnames/bind';
-import styles from './button.module.scss';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import React from "react";
+// import classnames from "classnames/bind";
+// import styles from './button.module.scss';
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
-const selector = 'elements-button';
+const selector = "elements-button";
 
-export type ButtonVariant = 'default' | 'icon-only' | 'text-only';
-export type ButtonPriority = 'primary' | 'secondary';
-export type ButtonSize = 'small' | 'medium' | 'large';
+export type ButtonVariant = "default" | "icon-only" | "text-only";
+export type ButtonPriority = "primary" | "secondary";
+export type ButtonSize = "small" | "medium" | "large";
 // export type ButtonIcon = { name: string, type: string };
 
 export interface ButtonProps {
@@ -47,18 +47,18 @@ export const ElementsButton = ({
   priority,
   onClick,
 }: ElementsButtonProps) => {
-  const cx = classnames.bind(styles);
-  const classes = cx(
-    selector,
-    [variant ?? 'default'],
-    [priority ?? 'primary'],
-    [size ?? 'medium']
-  );
+  // const cx = classnames.bind(styles);
+  // const classes = cx(
+  //   selector,
+  //   [variant ?? 'default'],
+  //   [priority ?? 'primary'],
+  //   [size ?? 'medium']
+  // );
   return (
-    <button onClick={onClick} className={classes} disabled={disabled}>
-      {variant !== 'icon-only' && label}
-      {variant == 'default' && <FavoriteIcon />}
-      {variant == 'icon-only' && <FavoriteBorderIcon />}
+    <button onClick={onClick} /* className={classes} */ disabled={disabled}>
+      {variant !== "icon-only" && label}
+      {variant == "default" && <FavoriteIcon />}
+      {variant == "icon-only" && <FavoriteBorderIcon />}
     </button>
   );
 };
