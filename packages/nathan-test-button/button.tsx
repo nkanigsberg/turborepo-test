@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 // import classnames from "classnames/bind";
 // import styles from './button.module.scss';
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+// import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+// import FavoriteIcon from "@material-ui/icons/Favorite";
 
-const selector = "elements-button";
+// const selector = "elements-button";
 
 export type ButtonVariant = "default" | "icon-only" | "text-only";
 export type ButtonPriority = "primary" | "secondary";
@@ -57,8 +57,8 @@ export const ElementsButton = ({
   return (
     <button onClick={onClick} /* className={classes} */ disabled={disabled}>
       {variant !== "icon-only" && label}
-      {variant == "default" && <FavoriteIcon />}
-      {variant == "icon-only" && <FavoriteBorderIcon />}
+      {/* {variant == "default" && <FavoriteIcon />} */}
+      {/* {variant == "icon-only" && <FavoriteBorderIcon />} */}
     </button>
   );
 };
