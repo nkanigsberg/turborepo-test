@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nathan-test/core": "*",
+    "@nathan-test/button": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
